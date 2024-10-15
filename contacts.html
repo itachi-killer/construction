@@ -432,7 +432,40 @@
     </nav>
 </header>
 
+<div class="container">
+  <section id="aborut">
+    <div class="slideshow-container">
 
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides1 ">
+        <div class="numbertext1">1 / 3</div>
+        <img src="./OFFICE MAP.PNG" style="width:100%">
+        <div class="text"><h2 style="font-family:  Helvetica, ;">Laying foundation for tomorrow  aerial narrow</p> </h2></div>
+      </div>
+    
+      <div class="mySlides1 ">
+        <div class="numbertext1">2 / 3</div>
+        <img src="./OFFICE MAP.PNG" style="width:100%">
+        <div class="text"><h2 style="font-family:  Helvetica;">Freestyle script   Your vison and ,Our Blueprint </h2> </div>
+      </div>
+    
+      <div class="mySlides1">
+        <div class="numbertext1">3 / 3</div>
+        <img src="./OFFICE MAP.PNG" style="width:100%">
+        <div class="text"><h2 style="font-family:  Helvetica, ;">Laying foundation for tomorrow  aerial narrow</p> </h2></div>
+      </div>
+    
+    
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot1" onclick="currentSlide1(1)"></span>
+      <span class="dot1" onclick="currentSlide1(2)"></span>
+      <span class="dot1" onclick="currentSlide1(3)"></span>
+    </div>
+  </section>
 
 
     <section id="contact">
@@ -463,7 +496,25 @@
 
 </body>
 <script>
+let slideIndex1 = 0;
+showSlides1();
 
+function showSlides1() {
+  let i;
+  let slides1 = document.getElementsByClassName("mySlides1");
+  let dots1 = document.getElementsByClassName("dot1");
+  for (i = 0; i < slides1.length; i++) {
+    slides1[i].style.display = "none";  
+  }
+  slideIndex1++;
+  if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+  for (i = 0; i < dots1.length; i++) {
+    dots1[i].className = dots1[i].className.replace(" active", "");
+  }
+  slides1[slideIndex1-1].style.display = "block";  
+  dots1[slideIndex1-1].className += " active";
+  setTimeout(showSlides1, 4000); // Change image every 2 seconds
+}
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
