@@ -139,7 +139,7 @@
                                
                                
                            }
-                           .kk{
+                           .vv{
                            
                                  color: #ffffff;
                                  padding: 10px 0;
@@ -153,7 +153,7 @@ bottom: 0;
                            }
                            nav a {
                                color: #ffffff;
-                               margin: 0 15px;
+                               margin: 5px 5px;
                                text-decoration: none;
                            }
                            .container {
@@ -224,8 +224,9 @@ bottom: 0;
                      left: 10px;
                    }
                     .profile {
-                       width: 25%;
-                       height: 25%;
+                        width: 25%;
+                        height: 25%;
+                       
                        position: relative;
                      border-radius: 50%;
                    }
@@ -388,11 +389,30 @@ bottom: 0;
                    
                        @media only screen and (max-width: 767px) {
                        /* Styles for mobile view */
-                     .header{
-                       font-size: 12px;
-                           padding: 20px; 
+                       .header img {
+                        float: left;
+                        width: 30px;
+                        height: 30px;
+                        background: #555;
+                      }
+                   
+                     .vv{
+                       font-size: 1px;
+                           padding:0px; 
                            font-family:   Arial, sans-serif; 
                      }
+
+                     nav {
+                        position: relative;
+bottom: 0;
+
+                           margin: 0px 0px ;
+                       }
+                       nav a {
+                           color: #ffffff;
+                           margin: 0 px;
+                           text-decoration: none;
+                       }
                    
                      .navbar {
                      overflow: hidden;
@@ -402,13 +422,13 @@ bottom: 0;
                    
                    /* Links inside the navbar */
                    .navbar a {
-                     float: left;
-                     font-size: 8px;
-                     color: white;
-                   
-                     padding: 14px 16px;
-                     text-decoration: none;
-                   }
+                    float: left;
+                    font-size: 9px;
+                    color: white;
+                  
+                 
+                    text-decoration: none;
+                  }
                    
                    /* The dropdown container */
                    .dropdown {
@@ -419,14 +439,14 @@ bottom: 0;
                    
                    /* Dropdown button */
                    .dropdown .dropbtn {
-                     font-size: 8px;
+                     font-size: 9px;
                      border: none;
                      outline: none;
                      color: rgb(237, 226, 226);
                      padding: 14px 16px;
                      background-color: inherit;
-                     font-family: inherit; /* Important for vertical align on mobile phones */
-                     margin: 0; /* Important for vertical align on mobile phones */
+                     font-family: Arial; /* Important for vertical align on mobile phones */
+                     margin: -9px; /* Important for vertical align on mobile phones */
                    }
                    
                    /* Add a red background color to navbar links on hover */
@@ -467,7 +487,7 @@ bottom: 0;
                    
                    
                      .dropdown{
-                       font-size: 30px;
+                       font-size: 3px;
                        
                      }
                    }
@@ -475,10 +495,24 @@ bottom: 0;
                    @media only screen and (min-width: 768px) {
                        /* Styles for desktop view */
                      .header{
-                       font-size: 30px;
+                       font-size: 2em;
+                       font-weight: 500;
+                       font-family: 'Courier New', Courier, monospace;
                        padding: 20px;
                        font-family:   Arial, sans-serif;
                      }
+
+                     nav {
+                        position: relative;
+bottom: 0;
+
+                           margin: 30px 30px ;
+                       }
+                       nav a {
+                           color: #ffffff;
+                           margin: 0 15px;
+                           text-decoration: none;
+                       }
                      .dropdown{
                        font-size: 30px;
                        
