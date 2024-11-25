@@ -389,10 +389,83 @@ bottom: 0;
                      
                    
                        @media only screen and (max-width: 767px) {
+
+                        /* forum  */
+                    .contact-container{ 
+                      height: 60vh; 
+                      display: flex; 
+                      align-items: center; 
+                      justify-content: space-evenly; 
+                      
+                      } 
+                      
+                      .contact-left{ 
+                      display: flex; 
+                      flex-direction: column; 
+                    
+                      gap: 20px;
+                      }
+              
+                      .contact-left-title h2{
+                          font-weight: 500;
+                          color: #5e4aa7;
+                          font-size: 40px;
+                          margin-bottom: 5px;
+                          
+               }          
+               .contact-left-title hr{
+                margin-left: 10px;
+              border: none; 
+              width: 100px; 
+              height: 5px; 
+              background-color: #555fc1; 
+              border-radius: 10px; 
+              margin-bottom: 20px; 
+               }
+              .contact-inputs{ 
+              width: 200px; 
+              height: 80px; 
+              margin-bottom: 20px; 
+              border: none; 
+              outline: none; 
+              padding-left: 25px; 
+              font-weight: 500; 
+              color: #666;
+              border-radius: 50px;
+              border: 2px solid #15100c;
+              }
+              
+               #textarea{
+                height: 1400px;
+               padding-top: 15px;
+               border-radius: 20px;
+               }
+               .contact-inputs:focus{
+               border: 2px solid #ff994f;
+              }
+              .contact-inputs::placeholder{
+                  color: rgb(183, 156, 227);
+              }
+              .ttt{
+                  display: flex;
+                  align-items: center;
+                  padding: 15px 30px;
+                  font-size: 16px;
+                  color: #8266ce;
+                  margin-top: 2px;
+                  margin-left: 0px;
+                  gap: 90px;
+                  border: none;
+                  border-radius: 50px;
+                  background: linear-gradient(270deg,#876d97,#dacfeb);
+                  cursor: pointer;
+              }
+           
+
                        /* Styles for mobile view */
                        
                     iframe{
-                      width:200px;
+                      width:300px;
                       height:200px;
                    
                      
@@ -505,6 +578,80 @@ bottom: 0;
                    }
                    
                    @media only screen and (min-width: 768px) {
+/* forum  */
+                    .contact-container{ 
+                      height: 70vh; 
+                      display: flex; 
+                      align-items: center; 
+                      justify-content: space-evenly; 
+                      
+                      } 
+                      
+                      .contact-left{ 
+                      display: flex; 
+                      flex-direction: column; 
+                    
+                      gap: 20px;
+                      }
+              
+                      .contact-left-title h2{
+                          font-weight: 600;
+                          color: #5e4aa7;
+                          font-size: 40px;
+                          margin-bottom: 5px;
+                          
+               }          
+               .contact-left-title hr{
+                margin-left: 10px;
+              border: none; 
+              width: 100px; 
+              height: 5px; 
+              background-color: #555fc1; 
+              border-radius: 10px; 
+              margin-bottom: 20px; 
+               }
+              .contact-inputs{ 
+              width: 600px; 
+              height: 70px; 
+              margin-bottom: 20px; 
+              border: none; 
+              outline: none; 
+              padding-left: 25px; 
+              font-weight: 500; 
+              color: #666;
+              border-radius: 50px;
+              border: 2px solid #15100c;
+              }
+              
+               .contact-left textarea{
+                height: 1400px;
+               padding-top: 15px;
+               border-radius: 20px;
+               }
+               .contact-inputs:focus{
+               border: 2px solid #ff994f;
+              }
+              .contact-inputs::placeholder{
+                color: rgb(183, 156, 227);
+              }
+              .ttt{
+                  display: flex;
+                  align-items: center;
+                  padding: 15px 30px;
+                  font-size: 16px;
+                  color: #8266ce;
+             
+                
+                  margin-top: 20px;
+                  margin-left: 400px;
+                  gap: 90px;
+                  border: none;
+                  border-radius: 50px;
+                  background: linear-gradient(270deg,#876d97,#dacfeb);
+                  cursor: pointer;
+              }
+
+
                     iframe{
                       width:1000px;
                       height:500px;
@@ -513,7 +660,7 @@ bottom: 0;
                    
                       left: 50%;
                      
-                      margin-left: 200px;
+                      margin-left: 150px;
                      }
 
                        /* Styles for desktop view */
@@ -616,4 +763,4 @@ bottom: 0;
              
 
 
-                   
+           
