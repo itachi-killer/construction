@@ -383,12 +383,24 @@ bottom: 0;
                            .text {
                              font-size: 11px
                            }
+                    
                          }
                    
                      
                    
                        @media only screen and (max-width: 767px) {
                        /* Styles for mobile view */
+                       
+                    iframe{
+                      width:200px;
+                      height:200px;
+                   
+                     
+                   
+                    
+                     
+                      margin-left: 50px;
+                     }
                        .header img {
                         float: left;
                         width: 30px;
@@ -493,6 +505,17 @@ bottom: 0;
                    }
                    
                    @media only screen and (min-width: 768px) {
+                    iframe{
+                      width:1000px;
+                      height:500px;
+                   
+                     
+                   
+                      left: 50%;
+                     
+                      margin-left: 200px;
+                     }
+
                        /* Styles for desktop view */
                      .header{
                        font-size: 2em;
@@ -589,3 +612,8 @@ bottom: 0;
                      visibility: visible;
                    }
                    }
+
+             
+
+
+                   
