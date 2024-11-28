@@ -223,14 +223,7 @@ bottom: 0;
                      top: 18px;
                      left: 10px;
                    }
-                    .profile {
-                        width: 30%;
-                        height: 30%;
-                        margin-top: -20px;
-                  margin-left: 200px;
-                       position: relative;
-                     border-radius: 50%;
-                   }
+                  
                    
                    .column {
                      float: left;
@@ -390,7 +383,16 @@ bottom: 0;
                      
                    
                        @media only screen and (max-width: 767px) {
+                     
 
+                        .profile {
+                          width: 30%;
+                          height: 30%;
+                          margin-top: px;
+                    margin-left: 10px;
+                         position: relative;
+                       border-radius: 50%;
+                     }
                         /* forum  */
                     .contact-container{ 
                       height: 60vh; 
@@ -420,7 +422,7 @@ bottom: 0;
               width: 100px; 
               height: 5px; 
               background-color: #555fc1; 
-              border-radius: 10px; 
+              border-radius: 5px; 
               margin-bottom: 20px; 
                }
               .contact-inputs{ 
@@ -432,7 +434,7 @@ bottom: 0;
               padding-left: 25px; 
               font-weight: 500; 
               color: #666;
-              border-radius: 50px;
+              border-radius: 5px;
               border: 2px solid #15100c;
               }
               .contact-inputs1{ 
@@ -444,7 +446,7 @@ bottom: 0;
                 padding-left: 25px; 
                 font-weight: 500; 
                 color: #666;
-                border-radius: 50px;
+                border-radius: 5px;
                 border: 2px solid #15100c;
                 }
               
@@ -459,6 +461,12 @@ bottom: 0;
               .contact-inputs::placeholder{
                   color: rgb(183, 156, 227);
               }
+              .contact-inputs1:focus{
+                border: 2px solid #ff994f;
+               }
+               .contact-inputs1::placeholder{
+                   color: rgb(183, 156, 227);
+               }
               .ttt{
                   display: flex;
                   align-items: center;
@@ -469,7 +477,7 @@ bottom: 0;
                   margin-left: 2px;
                   gap: 90px;
                   border: none;
-                  border-radius: 50px;
+                  border-radius: 5px;
                   background: linear-gradient(270deg,#876d97,#dacfeb);
                   cursor: pointer;
               }
@@ -591,6 +599,15 @@ bottom: 0;
                    }
                    
                    @media only screen and (min-width: 768px) {
+
+                    .profile {
+                      width: 30%;
+                      height: 30%;
+                      margin-top: -20px;
+                margin-left: 200px;
+                     position: relative;
+                   border-radius: 50%;
+                 }
 /* forum for website */
                     .contact-container{ 
                       height: 70vh; 
@@ -620,7 +637,7 @@ bottom: 0;
               width: 100px; 
               height: 5px; 
               background-color: #555fc1; 
-              border-radius: 10px; 
+              border-radius: 1px; 
               margin-bottom: 20px; 
                }
               .contact-inputs{ 
@@ -632,7 +649,7 @@ bottom: 0;
               padding-left: 25px; 
               font-weight: 500; 
               color: #666;
-              border-radius: 50px;
+              border-radius: 5px;
               border: 2px solid #15100c;
               }
               
@@ -645,7 +662,7 @@ bottom: 0;
                 padding-left: 25px; 
                 font-weight: 500; 
                 color: #666;
-                border-radius: 50px;
+                border-radius: 5px;
                 border: 2px solid #15100c;
                 }
                 
@@ -660,6 +677,13 @@ bottom: 0;
               .contact-inputs::placeholder{
                 color: rgb(183, 156, 227);
               }
+              .contact-inputs1:focus{
+                border: 2px solid #ff994f;
+               }
+               .contact-inputs1::placeholder{
+                 color: rgb(183, 156, 227);
+               }
+              
               .ttt{
                   display: flex;
                   align-items: center;
