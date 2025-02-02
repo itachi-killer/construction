@@ -1,0 +1,67 @@
+#video{
+  background-color: black;
+}
+#video-fullscreen{
+  width:0px;
+  height:0px;
+  max-width:20px;
+  max-height: 20px;
+  overflow: hidden;
+  position: absolute;
+}
+#progress-bar {
+  position:absolute;
+  left:0;
+  right:0;
+  margin:auto;
+  bottom:40px;
+  width:850px;
+  height:5px;
+  background-color: rgba(255,255,255,0.3);
+}
+#progress {
+  position:absolute;
+  left:0;
+  top:0;
+  width:0;
+  bottom:40px;
+  height:5px;
+  background-color: #116DD0;
+}
+#volume{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  border:none;
+  background-color:rgba(255,255,255,0.6);
+  background-image:url('../assets/vectors/icon_unmute.svg');
+  background-size: 11px 18px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-left:30px;
+}
+#volume.mute{
+  background-image:url('../assets/vectors/icon_mute.svg');
+  background-size: auto 19px;
+  background-position: calc(50% + 3px) 50%;
+}
+#playpause{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  border:none;
+  background-color:rgba(255,255,255,0.6);
+  background-image:url('../assets/vectors/icon_pause.svg');
+  background-size: 13px auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#playpause.pause{
+  background-image:url('../assets/vectors/icon_playpause.svg');
+  background-size: 18px 18px;
+}
+/* Only Desktop */
+@media
+only screen and (min-device-width:1025px){
+  #video-popup{padding-left:35px;}
+}

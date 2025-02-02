@@ -1,0 +1,63 @@
+@media (min-width: 1000px) {
+    .employeeTab {
+        color: #1652a3 !important;
+    }
+}
+#emp-details p {
+    font-size: 16px;
+    color: #303843;
+    line-height: 26px;
+}
+#icare-details li,
+#icare-details p {
+    font-size: 16px;
+    color: #303843;
+    line-height: 26px;
+}
+#icare-details h4 {
+    margin-top: 60px;
+    font-size: 20px;
+    color: #3d3e46;
+    font-family: "GraphikMedium";
+    line-height: 30px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+#icare-details ul {
+    /* padding-left: 20px; */
+    list-style: inside;
+}
+#icare-details ul li {
+    margin-top: 20px;
+    line-height: unset;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.emp-care-img {
+    margin-bottom: 40px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.title_heading,
+.stat-heading{
+	font-family: 'GraphikMedium';
+    font-size: 36px;
+    line-height: 46px;
+}
+.title_heading{
+    color: #303843;
+}
+@media only screen and (max-width: 767px){
+	 .title_heading{
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: normal;
+}
+	#legacy .stat-heading{
+	font-size: 26px;
+    line-height: 30px;
+}
+}

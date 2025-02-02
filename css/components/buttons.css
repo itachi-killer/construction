@@ -1,0 +1,424 @@
+/*
+*
+* This sheet contains the
+* button component styles
+*
+*/
+/*
+*
+* White Button
+*
+*/
+.component__white-button {
+  padding: 18px 30px;
+  background-color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:767px) {
+  .component__white-button {
+    padding: 17px 19px 15px;
+  }
+}
+
+/*  */
+.component__white-button p {
+  font-family: 'GraphikMedium';
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #303843;
+  text-align: center;
+}
+
+/*
+*
+* Gray Button
+*
+*/
+.component__gray-button {
+  height: 45px;
+  padding: 0 30px;
+  background-color: #E8EAEF;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width:768px) {
+  .component__gray-button {
+    display: inline-flex;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .component__gray-button {
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+  }
+}
+
+/*  */
+.component__gray-button p {
+  margin-top: 2px;
+  font-family: 'GraphikMedium';
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #303843;
+}
+
+/*
+*
+* Blue Link with Arrow
+*
+*/
+.component__blue-link {
+  font-family: 'GraphikMedium';
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: #1652A3;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width:767px) {
+  .component__blue-link {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
+/* Arrow Icon */
+.component__blue-link .arrow-icon {
+  margin-left: 5px;
+  vertical-align: text-top;
+}
+
+@media only screen and (max-width:767px) {
+  .component__blue-link .arrow-icon {
+    margin-top: 1px;
+  }
+}
+
+/*
+*
+* Back Button
+*
+*/
+.component__back-button {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E8EAEF;
+}
+
+.component__back-button p {
+  margin-left: 8px;
+  margin-top: 1px;
+  font-family: 'GraphikMedium';
+  font-size: 14px;
+  line-height: 1;
+  color: #303843;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width:768px) {
+  .component__back-button {
+    display: none;
+  }
+}
+
+/*
+*
+* Visit Website Link
+*
+*/
+.component__visit-website-link {
+  display: flex;
+  align-items: center;
+}
+
+.component__visit-website-link p {
+  font-family: 'GraphikMedium';
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: #1652A3;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width:767px) {
+  .component__visit-website-link p {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
+/* Arrow Icon */
+.component__visit-website-link .arrow-icon {
+  margin-left: 12px;
+}
+
+@media only screen and (min-width:768px) {
+  .component__visit-website-link .arrow-icon {
+    margin-bottom: 2px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .component__visit-website-link .arrow-icon {
+    margin-bottom: 1px;
+  }
+}
+
+/*
+*
+* Visit Website Button
+*
+*/
+.component__visit-website-button {
+  height: 60px;
+  background-color: #E8EAEF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component__visit-website-button p {
+  font-family: 'GraphikMedium';
+  font-size: 14px;
+  line-height: 1;
+  color: #303843;
+  text-transform: uppercase;
+}
+
+.component__visit-website-button img {
+  width: 8px;
+  height: 8px;
+  margin-left: 12px;
+  margin-bottom: 2px;
+}
+
+@media only screen and (min-width:768px) {
+  .component__visit-website-button {
+    display: none;
+  }
+}
+
+/*
+*
+* Business and Company Link
+*
+*/
+.component__business-link,
+.component__company-link {
+  display: block;
+  white-space: nowrap;
+  padding: 7px 0 8px;
+}
+
+@media only screen and (max-width:767px) {
+
+  .component__business-link,
+  .component__company-link {
+    padding: 12px 0;
+  }
+}
+
+/* business and company link first child */
+.component__business-link:first-child,
+.component__company-link:first-child {
+  margin-top: 14px;
+}
+
+@media only screen and (max-width:767px) {
+
+  .component__business-link:first-child,
+  .component__company-link:first-child {
+    margin-top: 5px;
+  }
+}
+
+/* business and company link p */
+.component__business-link p,
+.component__company-link p {
+  display: inline;
+  font-family: 'GraphikMedium';
+  font-size: 14px;
+  line-height: 21px;
+  color: #1652A3;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+@media only screen and (max-width:767px) {
+
+  .component__business-link p,
+  .component__company-link p {
+    line-height: 19px;
+  }
+}
+
+/* business and company link arrow icon */
+.component__business-link .arrow-icon,
+.component__company-link .arrow-icon {
+  width: 6px;
+  margin-left: 8px;
+}
+
+/*
+*
+* Back to Timeline Link
+*
+*/
+.link__back-to-timeline {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link__back-to-timeline:hover {
+  opacity: 0.7;
+}
+
+/* Back to Timeline Link img tag */
+.link__back-to-timeline img {
+  margin-bottom: 1px;
+  width: 6px;
+}
+
+/* Back to Timeline Link p tag */
+.link__back-to-timeline p {
+  margin-left: 8px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  color: #535A64;
+  text-transform: uppercase;
+}
+
+/*
+*
+* Read More Button
+*
+*/
+.component__read-more-button {
+  width: 103px;
+  height: 34px;
+  background: #E8EAEF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Read More Button p */
+.component__read-more-button p {
+  margin-top: 2px;
+  font-family: 'GraphikMedium';
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: #303843;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width:767px) {
+  .component__read-more-button p {
+    font-size: 11px;
+  }
+}
+
+/*
+*
+* Next Year Button
+*
+*/
+.component__next-year-button {
+  width: 82px;
+  height: 34px;
+  border: 1px solid #DEE2E8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:767px) {
+  .component__next-year-button {
+    width: calc(100vw - 50px);
+    height: 50px;
+    background-color: #E8EAEF;
+    border: none;
+  }
+}
+
+/* Next Year Button p */
+.component__next-year-button p {
+  font-family: 'GraphikMedium';
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: #303843;
+  padding-right: 8px;
+  padding-left: 2px;
+}
+
+@media only screen and (max-width:767px) {
+  .component__next-year-button p {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1;
+    padding-left: 0;
+  }
+}
+
+/* Next Year Button img */
+.component__next-year-button img {
+  margin-left: -3px;
+  transform: rotate(-90deg);
+}
+
+@media only screen and (max-width:767px) {
+  .component__next-year-button img {
+    width: 12px;
+  }
+}
+
+/*
+*
+* Download Link
+*
+*/
+.component__download-link {
+  display: flex;
+  align-items: center;
+}
+
+.component__download-link img {
+  width: 20px;
+}
+
+.component__download-link[data-download-type="video"] img {
+  width: 27px;
+}
+
+.component__download-link p {
+  margin-left: 12px;
+  font-family: 'GraphikMedium';
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  color: #0C50A0;
+}
+
+@media only screen and (max-width:767px) {
+  .component__download-link p {
+    margin-left: 16px;
+    font-family: 'GraphikMedium';
+    font-size: 14px;
+    letter-spacing: 0.09em;
+    margin-top: 1px;
+  }
+}

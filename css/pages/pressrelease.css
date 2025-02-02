@@ -1,0 +1,73 @@
+/*
+*
+* This sheet contains the
+* press releases page styles
+*
+*/
+/* #page * {
+  outline: 1px solid blue;
+} */
+/*
+*
+* Press Releases
+*
+*/
+#press-releases {
+  padding-bottom: 160px;
+}
+
+@media only screen and (max-width:767px) {
+  #press-releases {
+    padding-bottom: 70px;
+  }
+
+  #press-releases+#show-more {
+    margin-top: -10px;
+  }
+}
+
+#press-releases .press-release {
+  margin-top: 60px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width:767px) {
+  #press-releases .press-release {
+    margin-top: 50px;
+    padding-bottom: 10px;
+  }
+}
+
+/* date */
+#press-releases .press-release .date {
+  font-family: 'GraphikMedium';
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: #A0A4AA;
+}
+
+/* h2 */
+#press-releases .press-release h2 {
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #303843;
+}
+
+@media only screen and (max-width:767px) {
+  #press-releases .press-release h2 {
+    font-size: 16px;
+    line-height: 25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* read more button */
+#press-releases .press-release .component__read-more-button {
+  margin-top: 18px;
+}

@@ -1,0 +1,368 @@
+/*
+*
+* This sheet contains the
+* project inside page styles
+*
+*/
+/* #page * {
+  outline: 1px solid blue;
+} */
+/*
+*
+* h1 tag
+*
+*/
+h1 {
+    font-family: "GraphikMedium";
+    font-size: 30px;
+    line-height: 40px;
+    color: #303843;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+/*
+*
+* h2 tag
+*
+*/
+h2 {
+    font-family: "GraphikMedium";
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    color: #a0a4aa;
+}
+
+/*
+*
+* Project Header
+*
+*/
+#project-header,
+#project-header .project-header-container,
+#project-header .grid__12col {
+    height: 50px;
+}
+
+#project-header .project-header-container {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    background-color: white;
+    z-index: 9999;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+}
+#project-header .project-header-container > .grid__container__fixed {
+    max-width: 1rem;
+    width: auto;
+}
+#project-header .grid__12col {
+    display: flex;
+    align-items: center;
+}
+
+#project-header .project-nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+#project-header .project-nav p {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    color: #535a64;
+    text-transform: uppercase;
+}
+
+#project-header .project-nav .project-next-nav {
+    margin-left: 50px;
+}
+#project-header .project-nav .project-previous-nav:hover,
+#project-header .project-nav .project-next-nav:hover {
+    opacity: 0.7;
+}
+@media only screen and (max-width: 767px) {
+    #project-header {
+        display: none;
+    }
+}
+
+/*
+*
+* Project Image Slider
+*
+*/
+#slider__project-images {
+    position: relative;
+    height: 490px;
+    background-color: #f4f6f7;
+}
+
+@media only screen and (max-width: 767px) {
+    #slider__project-images {
+        height: 320px;
+    }
+}
+
+/* Project Image Slider Arrows */
+.slider-left-arrow,
+.slider-right-arrow {
+    position: absolute;
+    top: 230px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-left-arrow {
+    left: 64px;
+}
+
+.slider-right-arrow {
+    right: 64px;
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 767px) {
+    .slider-left-arrow,
+    .slider-right-arrow {
+        display: none;
+    }
+}
+
+/*
+*
+* Project Details
+*
+*/
+#project-details {
+    padding: 70px 0 150px;
+}
+
+@media only screen and (max-width: 767px) {
+    #project-details {
+        padding: 50px 0 55px;
+    }
+}
+
+/*
+*
+* Project Name and Location
+*
+*/
+#project-details .project-location-and-date {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1;
+    color: #3d3e46;
+}
+
+/*
+*
+* About Project
+*
+*/
+#project-details .about-project {
+    font-size: 14px;
+    line-height: 24px;
+    color: #3d3e46;
+}
+
+@media only screen and (max-width: 767px) {
+    #project-details .about-project {
+        margin-top: 40px;
+        font-size: 15px;
+    }
+}
+/*
+*
+* This sheet contains the
+* impact inside page styles
+*
+*/
+/* #page * {
+  outline: 1px solid blue;
+} */
+/*
+*
+* Blogpost Banner
+*
+*/
+.blogpost-banner {
+    height: 400px;
+    background-color: #f4f6f7;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .blogpost-banner {
+        height: 320px;
+    }
+}
+
+/*
+*
+* Blogpost Banner Image
+*
+*/
+.blogpost-banner-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*
+*
+* Blogpost Text
+*
+*/
+.blogpost-text {
+    padding: 60px 0 120px;
+}
+
+@media only screen and (max-width: 767px) {
+    .blogpost-text {
+        padding: 50px 0 80px;
+    }
+}
+
+/*
+*
+* Blogpost Heading
+*
+*/
+h1.blogpost-heading {
+    margin-top: 20px;
+    font-family: "GraphikMedium";
+    font-size: 26px;
+    line-height: 36px;
+    color: #1652a3;
+}
+
+@media only screen and (max-width: 767px) {
+    h1.blogpost-heading {
+        margin-top: 15px;
+        font-size: 28px;
+        line-height: 36px;
+        color: #303843;
+    }
+}
+
+/*
+*
+* Section Heading
+*
+*/
+h2.section-heading,
+h3.section-heading {
+    margin-top: 40px;
+    font-family: "GraphikMedium";
+    font-size: 16px;
+    line-height: 24px;
+    color: #3d3e46;
+}
+
+@media only screen and (max-width: 767px) {
+    h2.section-heading {
+        margin-top: 50px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    h3.section-heading {
+        margin-top: 60px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+/*
+*
+* Blogpost Body Copy
+*
+*/
+.blogpost-text p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #535a64;
+}
+
+@media only screen and (min-width: 768px) {
+    .blogpost-text h2 + p {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .blogpost-text p {
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #535a64;
+    }
+}
+
+/*
+*
+* Blogpost Date
+*
+*/
+.blogpost-text .blogpost-date {
+    margin-top: 0;
+    font-family: "GraphikMedium";
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: #a0a4aa;
+    text-transform: uppercase;
+}
+
+/*
+*
+* Back Button
+*
+*/
+@media only screen and (min-width: 768px) {
+    .component__back-button {
+        display: none;
+    }
+}
+p {
+    font-size: 16px;
+    line-height: 27px;
+    color: #535a64;
+}
+.blogpost-text .story-details{
+    padding-bottom: 30px;
+}
+.blogpost-text h3.strong {
+      font-size: 20px;
+    line-height: 27px;
+    color: #3D3E46;
+    font-family: "GraphikMedium";
+
+}
+.blogpost-text .list-container{
+    padding-top: 30px;
+    border-top: 1px solid #cecece;
+    
+}
+.blogpost-text .story-listing {
+    font-size: 16px;
+    line-height: 27px;
+    color: #535a64;
+    list-style: unset;
+    padding-left: 20px;
+}
+.blogpost-text .story-listing li{
+    padding-top: 15px;
+}

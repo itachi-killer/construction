@@ -1,0 +1,53 @@
+/*
+*
+* This sheet contains the
+* company projects page styles
+*
+*/
+/*
+*
+* h1 tag
+*
+*/
+#page{width:100vw;}
+
+h1 {
+  font-family: 'GraphikMedium';
+  font-size: 28px;
+  line-height: 39px;
+  color: #303843;
+}
+
+/*
+*
+* Intro
+*
+*/
+#intro {
+  padding: 40px 25px 60px;
+}
+
+/* intro p tag */
+#intro p, #intro h2 {
+  font-family: 'GraphikMedium';
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: #A0A4AA;
+  text-align: center;
+}
+
+/* intro h1 tag */
+#intro h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*
+*
+* Visit Website Button
+*
+*/
+.component__visit-website-button {
+  margin-top: 35px;
+}

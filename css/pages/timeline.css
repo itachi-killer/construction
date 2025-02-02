@@ -1,0 +1,335 @@
+/*
+*
+* This sheet contains the
+* timeline page styles
+*
+*/
+/* Timeline Container */
+@media only screen and (min-width: 768px) {
+	#timeline-container {
+		width: 100%;
+		height: calc(100vh - 80px);
+		background-color: #e8eaef;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		position: relative;
+	}
+
+	/* Tiles */
+	ul#p-tiles.ovh {
+		overflow: hidden;
+	}
+	ul#p-tiles {
+		position: absolute;
+		bottom: 0;
+		list-style: none;
+		width: calc(34 * 100vw / 24);
+		height: calc(100vh - 80px);
+		padding-left: calc(100vw / 24);
+	}
+
+	ul#p-tiles ::before,
+	ul#p-tiles ::after {
+		content: "";
+		display: table;
+	}
+
+	ul#p-tiles ::after {
+		clear: both;
+	}
+
+	ul#p-tiles {
+		zoom: 1;
+	}
+
+	ul#p-tiles li {
+		width: calc(100vw / 24);
+		float: left;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	ul#p-tiles .p-tile {
+		flex-shrink: 0;
+		width: 100%;
+		height: calc(100vw / 24);
+		cursor: pointer;
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+		background-image: linear-gradient(to bottom right, #efefef, #e2e2e2);
+		will-change: transform;
+	}
+
+	ul#p-tiles .p-tile-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		opacity: 0;
+	}
+
+	/* Timeline Year Label */
+	ul#p-tiles .timeline-year-label,
+	#timeline-business-labels,
+	#timeline-company-labels {
+		width: 100%;
+		height: calc(100vw / 24);
+		font-family: "GraphikMedium";
+		font-size: 12px;
+		line-height: calc(100vw / 24);
+		color: #535a64;
+		/* text-align: center; */
+		will-change: opacity;
+	}
+
+	#timeline-business-labels,
+	#timeline-company-labels {
+		position: absolute;
+		bottom: 0;
+		opacity: 0;
+		display: flex;
+	}
+
+	.timeline-business-label,
+	.timeline-company-label {
+		/* text-align: center; */
+		white-space: nowrap;
+	}
+
+	.timeline-company-label {
+		text-transform: uppercase;
+	}
+
+	.timeline-business-label {
+		margin-right: calc(100vw / 24);
+	}
+
+	/*
+*
+* Timeline Tabs
+*
+*/
+	#timeline-tabs {
+		position: absolute;
+		left: calc(50vw - 180px);
+		top: 160px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0px 1px 2px rgba(63, 63, 63, 0.15);
+		border-radius: 30px;
+		overflow: hidden;
+	}
+
+	#timeline-tabs .timeline-tab {
+		width: 120px;
+		cursor: pointer;
+		font-size: 14px;
+		background: #fff;
+		color: #9da5af;
+		text-align: center;
+		font-family: "GraphikMedium";
+		font-size: 12px;
+		letter-spacing: 0.08em;
+		line-height: 50px;
+		color: #535a64;
+		text-transform: uppercase;
+	}
+
+	#timeline-tabs #timeline-business-tab {
+		border-left: 1px solid rgba(103, 111, 135, 0.1);
+		border-right: 1px solid rgba(103, 111, 135, 0.1);
+	}
+
+	#scroll-left,
+	#scroll-right {
+		position: absolute;
+		/* top: 47vh; */
+		top: 160px;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	#scroll-left {
+		left: calc(100vw / 24);
+	}
+
+	#scroll-right {
+		right: calc(100vw / 24);
+		transform: rotate(180deg);
+	}
+
+	#timeline-tooltip {
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		min-width: 130px;
+		padding: 15px 25px;
+		background: white;
+		box-shadow: 3px 2px 4px rgba(134, 134, 134, 0.17);
+		pointer-events: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#timeline-tooltip::before {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		left: 50%;
+		bottom: -3px;
+		width: 25px;
+		height: 25px;
+		background-color: white;
+		transform: translate3d(-50%, 0, 0) rotate(45deg);
+	}
+
+	#timeline-tooltip-text {
+		position: relative;
+		z-index: 2;
+		font-family: "GraphikMedium";
+		font-size: 12px;
+		line-height: 16px;
+		color: #3d3e46;
+	}
+
+	/*
+*
+* Data Active Tab
+*
+*/
+	/* data-active-tab="year" */
+	#main[data-active-tab="YEAR"] #scroll-left,
+	#main[data-active-tab="YEAR"] #scroll-right {
+		display: block;
+	}
+
+	#main[data-active-tab="YEAR"] #timeline-container {
+		overflow-x: auto;
+	}
+	#timeline-container::-webkit-scrollbar {
+		height: 8px;
+		cursor: grab;
+	}
+
+	#timeline-container::-webkit-scrollbar-track {
+		background: #fff;
+		/* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+	}
+	#timeline-container::-webkit-scrollbar-thumb {
+		background: #1652a3;
+		height: 4px;
+	}
+	#main[data-active-tab="YEAR"] #timeline-year-tab {
+		background: #1652a3;
+		color: white;
+	}
+
+	#main[data-active-tab="YEAR"] .timeline-year-label {
+		opacity: 1;
+	}
+
+	#main[data-active-tab="YEAR"] #timeline-business-labels,
+	#main[data-active-tab="YEAR"] #timeline-company-labels {
+		opacity: 0;
+	}
+
+	/* data-active-tab="business" */
+	/* #main[data-active-tab="BUSINESS"] #p-tiles {
+    padding-left: 0;
+  } */
+
+	/* #main[data-active-tab="BUSINESS"] #scroll-left,
+  #main[data-active-tab="BUSINESS"] #scroll-right {
+    display: none;
+  }
+
+  #main[data-active-tab="BUSINESS"] #timeline-container {
+    overflow-x: hidden;
+  } */
+
+	#main[data-active-tab="BUSINESS"] #timeline-business-tab {
+		background: #1652a3;
+		color: white;
+	}
+
+	#main[data-active-tab="BUSINESS"] #timeline-business-labels {
+		opacity: 1;
+	}
+
+	#main[data-active-tab="BUSINESS"] .timeline-year-label,
+	#main[data-active-tab="BUSINESS"] #timeline-company-labels {
+		opacity: 0;
+	}
+
+	/* data-active-tab="company" */
+	/* #main[data-active-tab="COMPANY"] #p-tiles {
+    padding-left: 0;
+  } */
+
+	/* #main[data-active-tab="COMPANY"] #scroll-left,
+  #main[data-active-tab="COMPANY"] #scroll-right {
+    display: none;
+  }
+
+  #main[data-active-tab="COMPANY"] #timeline-container {
+    overflow-x: hidden;
+  } */
+
+	#main[data-active-tab="COMPANY"] #timeline-company-tab {
+		background: #1652a3;
+		color: white;
+	}
+
+	#main[data-active-tab="COMPANY"] #timeline-company-labels {
+		opacity: 1;
+	}
+
+	#main[data-active-tab="COMPANY"] .timeline-year-label,
+	#main[data-active-tab="COMPANY"] #timeline-business-labels {
+		opacity: 0;
+	}
+}
+
+/* Mobile */
+/*
+*
+* Intro
+*
+*/
+@media only screen and (max-width: 767px) {
+	main .mobile {
+		min-height: calc(100vh - 70px);
+	}
+}
+
+#intro {
+	padding: 40px 25px 60px;
+}
+
+/* intro h1 tag */
+#intro h1 {
+	margin-top: 20px;
+	text-align: center;
+	font-family: "GraphikMedium";
+	font-size: 28px;
+	line-height: 39px;
+	color: #303843;
+}
+
+@media only screen and (max-width: 1366px) {
+	#timeline-tabs,
+	#scroll-left,
+	#scroll-right {
+		top: 120px;
+	}
+}

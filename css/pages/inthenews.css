@@ -1,0 +1,89 @@
+/*
+*
+* This sheet contains the
+* news page styles
+*
+*/
+
+
+/* #page * {
+  outline: 1px solid blue;
+} */
+
+
+/*
+*
+* News Items
+*
+*/
+
+#news-items {
+    padding-bottom: 160px;
+}
+
+@media only screen and (max-width:767px) {
+    #news-items {
+        padding-bottom: 70px;
+    }
+    #news-items+#show-more {
+        margin-top: -10px;
+    }
+}
+
+#news-items .news-item {
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+@media only screen and (min-width:768px) {
+  #news-items .news-item:nth-child(odd){
+    clear:left;
+  }
+}
+@media only screen and (max-width:767px) {
+    #news-items .news-item {
+        margin-top: 50px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/* date */
+
+#news-items .news-item .date,
+#news-items .news-item .source {
+  font-family: 'GraphikMedium';
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: #A0A4AA;
+  text-transform: uppercase;
+}
+
+
+/* h2 */
+
+#news-items .news-item h2 {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #303843;
+}
+
+@media only screen and (max-width:767px) {
+    #news-items .news-item h2 {
+        font-size: 16px;
+        line-height: 25px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+/* read more button */
+
+#news-items .news-item .component__read-more-button {
+    margin-top: 18px;
+}

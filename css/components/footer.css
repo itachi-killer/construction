@@ -1,0 +1,432 @@
+/*
+*
+* This sheet contains the
+* footer component styles
+*
+*/
+/* #component__mobile-footer * {
+  outline: 1px solid blue;
+} */
+/*
+*
+* Desktop Footer
+*
+*/
+/* #component__footer * {
+  outline: 1px solid blue;
+} */
+#component__footer {
+  background-color: #535A64;
+  padding: 70px 0 80px;
+}
+
+@media only screen and (max-width:767px) {
+  #component__footer {
+    background-color: #535A64;
+    padding: 40px 0 32px;
+  }
+}
+
+/* Section Name */
+#component__footer .section-name {
+  padding-bottom: 2px;
+  font-family: 'GraphikMedium';
+  font-size: 12px;
+  color: #9DA5AF;
+}
+
+@media only screen and (max-width:767px) {
+  #component__footer .section-name {
+    font-family: 'GraphikMedium';
+    font-size: 13px;
+    line-height: 1;
+    color: #9DA5AF;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+}
+
+/* Companies Section */
+#component__footer .companies-section {
+  /* margin-top: 60px; */
+  margin-top: 30px;
+}
+
+#component__footer .businesses-section {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width:767px) {
+  #component__footer .companies-section {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  /* #component__footer .businesses-list:not(.-not4Child) .grid__2col:nth-child(5) {
+    clear: left;
+  }
+  #component__footer .businesses-list:not(.-not4Child) .grid__2col:nth-child(9) {
+    clear: left;
+  }
+  #component__footer .businesses-list:not(.-not4Child) .grid__2col:nth-child(13) {
+    clear: left;
+  } */
+  /* 4n+1 */
+  #component__footer .businesses-list:not(.-not4Child) .grid__2col:nth-child(4n+1){
+    clear: left;
+  }
+
+  #component__footer .businesses-list.-not4Child .grid__2col:nth-child(4) {
+    clear: left;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  #component__footer .businesses-list .grid__2col:nth-child(2n) {
+    padding-left: 0;
+  }
+
+  #component__footer .businesses-list .grid__2col:nth-child(3) {
+    clear: left;
+  }
+}
+
+/* Sitemap Links */
+@media only screen and (max-width:767px) {
+  #component__footer .sitemap-links {
+    margin-top: 10px;
+  }
+
+  #component__footer .companies-list>.grid__col:nth-child(2) {
+    padding-left: 0;
+  }
+}
+
+#component__footer .sitemap-link p {
+  position: relative;
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #9DA5AF;
+}
+
+@media only screen and (max-width:767px) {
+  #component__footer .sitemap-link p {
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    line-height: 19px;
+    color: #9DA5AF;
+  }
+}
+
+#component__footer .single-line {
+  line-height: 1 !important;
+}
+
+/* Copyright */
+#component__footer .copyright {
+  /* margin-top: 50px; */
+  font-family: 'GraphikMedium';
+  /* font-size: 12px; */
+  /* line-height: 1; */
+  /* letter-spacing: 0.02em; */
+  color: #9DA5AF;
+  margin-top: 60px;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+
+@media only screen and (max-width:767px) {
+  #component__footer .copyright {
+    margin-top: 50px;
+    font-family: 'GraphikMedium';
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #9DA5AF;
+    text-transform: uppercase;
+  }
+}
+
+/* Note */
+#component__footer .note {
+  /* margin-top: 20px; */
+  /* font-size: 11px; */
+  /* line-height: 15px; */
+  /* letter-spacing: 0.02em; */
+  color: #9DA5AF;
+  margin-top: 24px;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.6px;
+}
+
+@media only screen and (max-width:767px) {
+  #component__footer .note {
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 15px;
+    /* letter-spacing: 0.02em; */
+    letter-spacing: 0.6px;
+    color: #9DA5AF;
+    line-height: 13px;
+  }
+}
+
+/* Footer Map Section */
+#component__footer .map-section {
+  position: relative;
+}
+
+/* @media only screen and (max-width:767px) {
+  #component__footer .map-section {
+    display: none;
+  }
+} */
+
+/* Footer Map Heading */
+#component__footer .map-heading {
+  position: absolute;
+  /* top: 20px; */
+  right: 56px;
+  z-index: 1;
+  font-family: 'GraphikMedium';
+  font-size: 18px;
+  line-height: 1;
+  color: #9DA5AF;
+  top: 3px;
+}
+
+/* Footer Map Image */
+#component__footer .map-image {
+  position: absolute;
+  /* top: 100px;
+  right: -50px; */
+  top: 30px;
+  right: -69px;
+}
+
+
+
+.m-accordionHeading button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  /* cursor: pointer; */
+  outline: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.m-accordion.-notAccordion .m-accordionHeading button{
+cursor: pointer;
+}
+
+@media (max-width:767px) {
+  .accordion_firstRow.grid__row {
+    zoom: unset;
+    width: unset;
+  }
+
+  .accordion_firstRow .m-accordion.grid__col {
+    float: unset;
+    padding: unset;
+    min-height: unset;
+  }
+
+  .accordion_firstRow .m-accordion.grid__2col {
+    width: unset;
+  }
+
+  .m-accordion {
+    border-bottom: 1px solid #9da5af5e;
+  }
+
+  .m-accordionHeading {
+    padding: 16px 20px;
+  }
+
+  .m-accordionHeading:focus {
+    border: none;
+    outline: none;
+  }
+
+  [data-accordion]+[role="region"] {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+  }
+
+  #component__footer .m-accordionHeading.section-name {
+    font-size: 13px;
+    font-weight: medium;
+    /* line-height: 30px; */
+    padding: 20px 0;
+  }
+
+  #component__footer .m-accordionHeading.section-name svg {
+    /* width: 11px;
+          height: 6px; */
+    width: 16px;
+    height: 16px;
+    transform: rotate(0);
+  }
+
+  #component__footer .m-accordionHeading button[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+
+  #component__footer .m-accordionHeading.section-name svg path {
+    stroke: #9DA5AF;
+  }
+
+  #component__footer .grid__container__fixed {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #component__footer .businesses-list::before {
+    display: unset;
+    content: unset;
+  }
+
+  #component__footer .businesses-list {
+    /* column-count: 2; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #component__footer .businesses-list>a {
+    padding-left: 0;
+    padding-right: 0;
+    width: 120px;
+  }
+
+  #component__footer .accordionList {
+    margin-top: 10px;
+  }
+
+  #component__footer .map-section>div {
+    float: unset;
+    padding: unset;
+    min-height: unset;
+  }
+
+  #component__footer .map-heading {
+    position: relative;
+    left: unset;
+    right: unset;
+    max-width: 219px;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 15px;
+  }
+
+  #component__footer .tscSection .note {
+    max-width: 247px;
+  }
+
+  #component__footer .tscSection>div {
+    padding: 0;
+  }
+
+  #component__footer .tscSection .ts {
+    padding-left: 12px;
+  }
+
+  #component__footer .tscSection .spFooterLogo {
+    margin-top: 20px;
+  }
+  .isAbove767{
+    display: none;
+  }
+  .map-image{
+    display: none !important;
+    opacity: 0;
+  }
+  .m-accordionHeading button {
+    cursor: pointer;
+  }
+}
+
+@media (min-width:768px) {
+  .isBelow767 {
+    display: none;
+  }
+
+  .m-accordion {
+    border-bottom: none;
+  }
+
+  #component__footer .m-accordionHeading.section-name svg {
+    display: none;
+  }
+
+  #component__footer .section-name {
+    /* float: left; */
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 4px;
+  }
+
+  .accordionList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordionList .m-accordion {
+    margin-top: 30px;
+  }
+
+  /* .accordionList .m-accordion:nth-child(6) {
+    order: 1;
+  }
+
+  .accordionList .m-accordion:nth-child(7) {
+    order: 2;
+  }
+
+  .accordionList .m-accordion:nth-child(8) {
+    order: 3;
+  }
+
+  .accordionList .m-accordion:nth-child(1) {
+    order: 4;
+  }
+
+  .accordionList .m-accordion:nth-child(2) {
+    order: 5;
+  }
+
+  .accordionList .m-accordion:nth-child(3) {
+    order: 6;
+  }
+
+  .accordionList .m-accordion:nth-child(4) {
+    order: 7;
+  }
+
+  .accordionList .m-accordion:nth-child(5) {
+    order: 8;
+  } */
+
+  .accordion_firstRow .m-accordion {
+    margin-top: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .spFooterLogo {
+    text-align: end;
+  }
+  .tscGridSection{
+    display: flex;
+    align-items: flex-end;
+  }
+}
